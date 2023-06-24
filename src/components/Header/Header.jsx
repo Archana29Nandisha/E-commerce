@@ -14,6 +14,7 @@ const Header = () => {
                     <input type= 'text' placeholder="Search" className=' ml-1 outline-none p-2 font-semibold text-sm w-[200px] bg-inherit'/>
                     <img src={search} alt='search'className='w-6 h-6 object-contain cursor-pointer mr-2'/>
                 </div>
+                <h1>bbb</h1>
             </div>
             {/* header right */}
             <img src={cart} alt='cart' className='w-6 h-6 object-contain cursor-pointer'/>
