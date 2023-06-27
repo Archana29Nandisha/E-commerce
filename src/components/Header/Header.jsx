@@ -15,7 +15,7 @@ const Header = () => {
                 <span className=' text-neutral-600'>29</span>
                 </h1>
                 <div className=' overflow-hidden ml-2 flex items-center rounded-full bg-slate-500 '>
-                    <input type= 'text' placeholder="Search" className=' ml-1 outline-none p-2 font-semibold text-sm w-[200px] bg-inherit'/>
+                    <input type= 'text' placeholder="Search" className=' hidden sm:inline-block ml-1 outline-none p-2 font-semibold text-sm w-[200px] bg-inherit'/>
                     <IconButton><SearchIcon className=' text-gray-700'/></IconButton>
                 </div>
             
