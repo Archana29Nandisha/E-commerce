@@ -8,7 +8,7 @@ import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 
 const Footer = () => {
     return(
-        <footer className=' fixed bottom-0 left-0 z-[100] w-full py-5 px-2 bg-my-background flex items-center justify-between drop-shadow-header-shadow '>
+        <footer className=' fixed bottom-0 left-0 z-[100] w-full p-5 py-2 px-2 bg-my-background flex items-center justify-between drop-shadow-header-shadow '>
 <IconButton
 sx={{
     padding:"4px",
@@ -18,7 +18,7 @@ sx={{
 >
     <div>
     <HomeIcon/>
-    <p className=' text-xs'>Home</p>
+    <p className=' text-xs font-semibold'>Home</p>
     </div>
 </IconButton>
 <IconButton 
@@ -30,7 +30,7 @@ sx={{
 >
     <div>
     <CategoryIcon/>
-    <p className=' text-xs'>Category</p>
+    <p className=' text-xs font-semibold'>Category</p>
     </div>
 </IconButton>
 <IconButton 
@@ -41,7 +41,7 @@ sx={{
 }}>
     <div>
     <AccountCircleIcon/>
-    <p className=' text-xs'>Profile</p>
+    <p className=' text-xs font-semibold'>Profile</p>
     </div>
     
 </IconButton>
