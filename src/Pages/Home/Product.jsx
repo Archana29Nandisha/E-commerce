@@ -6,8 +6,8 @@ import { Grid, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/grid";
 import "swiper/css/pagination";
-import './style.css'
 import { IconButton } from "@mui/material";
+
 
 const productArr = [
     {
@@ -31,54 +31,33 @@ const productArr = [
         productTitle:"product title"
     },
     {
-        imageUrl: " ",
-        price :"100",
-        productTitle:"product title"
-    },
-    {
-        imageUrl: " ",
-        price :"100",
-        productTitle:"product title"
-    },
-    {
-        imageUrl: " ",
-        price :"100",
-        productTitle:"product title"
-    },
-    {
-        imageUrl: " ",
-        price :"100",
-        productTitle:"product title"
-    },
-    {
-        imageUrl: " ",
-        price :"100",
-        productTitle:"product title"
-    },
-    {
-        imageUrl: " ",
+        imageUrl: " https://ifullsupport.com/wp-content/uploads/2017/10/iphone8colors-1024x627.jpg ",
         price :"100",
         productTitle:"product title"
     },
 ]
 
+
 const Product = ( { title,rowsCount,slidesPerView } ) => {
+    
   return (
     <section className=" w-full mt-6">
         <h1 className=" text-lg font-bold mb-3">
             { title }
         </h1>
-        <Swiper
-        slidesPerView={Number(slidesPerView)}
+         <Swiper
+        slidesPerView={3}
         grid={{
-          rows: Number(rowsCount),
+          rows: 2,
         }}
         spaceBetween={30}
         pagination={{
           clickable: true,
         }}
-        modules={[Grid, Pagination]}
-        />
+        modules={[Grid, Pagination]}  
+      >
+
+      </Swiper>
         { productArr.map(({ imageUrl, price, productTitle }, index )=> (
             <SwiperSlide key={index}>
                 <ProductUnit
